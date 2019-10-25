@@ -1,0 +1,123 @@
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/estate/search">Search</a></li>
+            <li role="presentation" class="active"><a href="/estate/cre">Create</a></li>
+            <li role="presentation"><a href="/estate/admin">Admin</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="page-header">
+                    <h1>Real Estate Rental System</h1>
+                    <small>Real Estate Rental Management System is a web-based system to facilitate flatshare and
+                        finding roommates.</small>
+                </div>
+
+                <div class="row">
+
+                    <form id="createform">
+                        <h2>Progerty Create</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="title">Property title:</label>
+                                    <input name="title" type="text" class="form-control" placeholder="NO.1 estate" id="title">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="imageurl">Image URL:</label>
+                                    <input name="imageurl" type="url" class="form-control" placeholder="https://xxxx" id="imageurl">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="estate">Estate:</label>
+                                    <select name="estate" class="form-control">
+                                        <option>Festival city</option>
+                                        <option>Tin Ma Court</option>
+                                        <option>City One Shatin</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="bedrooms">Bedrooms:</label>
+                                    <input name="bedrooms" type="number" class="form-control" id="bedrooms" placeholder="2">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                        <!--  row   -->
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="area">Gross Area:</label>
+                                    <input name="area" type="number" class="form-control" id="area" placeholder="800">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="tenants">Expected Tenants:</small></label>
+                                    <input name="tenants" type="number" class="form-control" id="tenants" placeholder="2">
+                                </div>
+
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                        <!--  row   -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="rent">Rent:</label>
+                                    <input name="rent" type="number" class="form-control" id="rent" placeholder="2000">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="isHighlight" type="checkbox" value="" id="newsletter"> Highlight Property
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                        <!--  row   -->
+
+                        
+                    </form>
+                    <button id="createbutton" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+        </div>
+        <div class="col-xs-2"></div>
+    </div>

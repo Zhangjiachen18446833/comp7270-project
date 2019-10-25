@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation" class="active"><a href="/estate/search">Search</a></li>
+            <li role="presentation"><a href="/estate/cre">Create</a></li>
+            <li role="presentation"><a href="/estate/admin">Admin</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <div class="page-header">
+                    <h1>Real Estate Rental System</h1>
+                    <small>Real Estate Rental Management System is a web-based system to facilitate flatshare and
+                        finding roommates.</small>
+                </div>
+
+                <div class="row">
+                    <form id="searchform">
+                        <h2>Search</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="bedrooms">Bedrooms:</label>
+                                    <input name="bedrooms" type="number" class="form-control" id="bedrooms"
+                                        placeholder="2">
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="estate">Estate:</label>
+                                    <select name="estate" class="form-control">
+                                        <option>Festival city</option>
+                                        <option>Tin Ma Court</option>
+                                        <option>City One Shatin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--  col-md-6   -->
+                        </div>
+                    </form>
+                    <button id="searchbutton" type="submit" class="btn btn-primary">Search</button>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="zero"></div>
+                    </div>
+                    <div id="one" class="col-md-6">
+                    </div>
+                    <div id="two" class="col-md-6">
+                    </div>
+                    <div id="three" class="col-md-12">
+                        <button type="submit" class="btn btn-primary"><a
+                                href="javascript:pagination(-1);">上一页</a></button>
+                        <button type="submit" class="btn btn-primary"><a
+                                href="javascript:pagination(1);">下一页</a></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
